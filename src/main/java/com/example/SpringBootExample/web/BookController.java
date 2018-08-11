@@ -23,7 +23,7 @@ public class BookController {
         return bookService.findById(id);
     }
 
-    @PostMapping("/create")
+    @PostMapping("/add")
     public Book create(@RequestBody Book book){
         Book newBook = bookService.save(book);
         return newBook;
